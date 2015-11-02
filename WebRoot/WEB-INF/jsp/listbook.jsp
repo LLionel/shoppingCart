@@ -37,7 +37,7 @@
 					<td>${entry.value.author }</td>
 					<td>${entry.value.price }</td>
 					<td>${entry.value.description }</td>
-					<td>$<a href ="${pageContext.request.contextPath }/servlet/BuyServlet?id=${entry.value.id}">购买</td>
+					<td><a href ="${pageContext.request.contextPath }/servlet/BuyServlet?id=${entry.value.id}">购买</td>
 				</tr>
 			</c:forEach>
 		</table>

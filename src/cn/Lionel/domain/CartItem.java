@@ -3,7 +3,7 @@ package cn.Lionel.domain;
 public class CartItem {
 
 	private Book book;
-	private int quanlity = 0;
+	private int quantity = 0;
 	private double price = 0;
 	
 	public Book getBook() {
@@ -12,12 +12,12 @@ public class CartItem {
 	public void setBook(Book book) {
 		this.book = book;
 	}
-	public int getQuanlity() {
-		return quanlity;
+	public int getQuantity() {
+		return quantity;
 	}
-	public void setQuanlity(int quanlity) {
-		this.quanlity = quanlity;
-		this .price = this.quanlity*book.getPrice();
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+		this .price = this.quantity*book.getPrice();
 	}
 	public double getPrice() {
 		return price;
@@ -28,7 +28,7 @@ public class CartItem {
 	public CartItem(Book book, int quanlity, double price) {
 		super();
 		this.book = book;
-		this.quanlity = quanlity;
+		this.quantity = quanlity;
 		this.price = price;
 	}
 	public CartItem() {

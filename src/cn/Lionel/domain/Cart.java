@@ -35,15 +35,22 @@ public class Cart {
 		{
 			item = new CartItem();
 			item.setBook(book);
-			item.setQuanlity(1);
+			item.setQuantity(1);
 //			item.setPrice(item.getQuanlity()*book.getPrice());
 			map.put(book.getId(), item);
 		}
 		else
 		{
-			item.setQuanlity(item.getQuanlity()+1);
+			item.setQuantity(item.getQuantity()+1);
 //			item.setPrice(price+book.getPrice());
 		}
 	}
-	
+	public void deleteItem(String id)
+	{
+		map.remove(id);
+	}
+	public void clearAll()
+	{
+		map.clear();
+	}
 }
